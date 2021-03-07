@@ -7,18 +7,17 @@
   </head>
   <body>
     <h1 id="header">Student Details</h1>
-    <img id="photo" src="assets/photo.jpg" width="50" height="60" />
+    <img id="photo1" src="assets/photo.jpg" width="50" height="60" />
     <br /><br />
-    <label id="firstName"> Rejan </label>
+    <label id="firstName1"> Rejan </label>
     <br /><br />
-    <label id="lastName"> Biswakarma </label>
+    <label id="lastName1"> Biswakarma </label>
     <br /><br />
-    <label id="address"> Itahari-07, Sunsari, Nepal </label>
+    <label id="address1"> Itahari-07, Sunsari, Nepal </label>
     <br /><br />
-    <label id="phone"> 9819022648 </label>
+    <label id="phone1"> 9819022648 </label>
     <br /><br />
-    <button (click)="download()">Export</button>
-    <br /><br />
+
     <!-- <label for="files">Select files:</label>
     <input type="file" id="files" name="files" multiple /><br /><br />
     <input type="submit" /> -->
@@ -26,9 +25,36 @@
     <input
       type="file"
       (change)="onFileSelect($event.target)"
-      id="afile"
+      id="afile1"
       accept=".png, .jpg, .jpeg"
       multiple
     />
+
+    <img id="photo2" src="assets/photo.jpg" width="50" height="60" />
+    <br /><br />
+    <label id="firstName2"> Rejan </label>
+    <br /><br />
+    <label id="lastName2"> Biswakarma </label>
+    <br /><br />
+    <label id="address2"> Itahari-07, Sunsari, Nepal </label>
+    <br /><br />
+    <label id="phone2"> 9819022648 </label>
+    <br /><br />
+
+    <!-- <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple /><br /><br />
+    <input type="submit" /> -->
+
+    <input
+      type="file"
+      (change)="onFileSelect($event.target)"
+      id="afile2"
+      accept=".png, .jpg, .jpeg"
+      multiple
+    />
+
+    <br /><br />
+    <button (click)="download()">Export</button>
+    <br /><br />
   </body>
 </html>
