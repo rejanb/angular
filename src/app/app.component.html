@@ -18,5 +18,17 @@
     <label id="phone"> 9819022648 </label>
     <br /><br />
     <button (click)="download()">Export</button>
+    <br /><br />
+    <!-- <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple /><br /><br />
+    <input type="submit" /> -->
+
+    <input
+      type="file"
+      (change)="onFileSelect($event.target)"
+      id="afile"
+      accept=".png, .jpg, .jpeg"
+      multiple
+    />
   </body>
 </html>
